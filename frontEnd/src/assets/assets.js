@@ -87,7 +87,7 @@ import women_F from "./womenFashion.jpg"
 import kids_F from "./kidsFashion.jpeg"
 import women_F1 from "./womwn.jpg"
 import contact from "./contact_img.png"
-import logo from "./picture1.jpg"
+import logo from "./Picture1.jpg"
 
 // import logo from "./logo.png"
 import add from "./add.png"
