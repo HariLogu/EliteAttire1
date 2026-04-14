@@ -142,9 +142,15 @@ const NavBar = () => {
           <div className="flex justify-center gap-4 mt-3">
             <div className="flex gap-3">
               <div className="group relative">
-                <div className="p-1 border-2 rounded relative border-amber-200 hover:bg-zinc-100 cursor-pointer">
-                  <img src={assets.user} alt="" className="w-5 " />
-                </div>
+                <div
+                    onClick={() => {
+                      setOpen(false);
+                      token ? null : navigate("/login");
+                    }}
+                    className="p-1 border-2 rounded border-amber-200 hover:bg-zinc-100 cursor-pointer"
+                  >
+                    <img src={assets.user} alt="" className="w-5" />
+                  </div>
                 <div className="group-hover:block hidden absolute dropdown-menu right-0 bg-amber-100 text-sm">
                   <div className="flex flex-col gap-1 w-28 py-2 px-5 rounded">
                     <Link
